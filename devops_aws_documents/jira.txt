@@ -1,0 +1,2 @@
+ps aux | grep -i apt
+sudo apt-get remove --purge mysql-server mysql-client mysql-common

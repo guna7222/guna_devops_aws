@@ -1,0 +1,21 @@
+Error message:-
+sudo apt install ca-certificates
+
+1) Java
+sudo apt install openjdk-8-jdk
+2)add jenkins to the repositary
+and
+import gpg keys
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+3) add jenkins repository to the system
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+4) sudo apt update
+Error message:- certificate expired
+sudo apt install ca-certificates
+
+5) sudo apt install jenkins
+
+6)  To verify if jenkins is up and running
+sudo systemctl jenkins status 
